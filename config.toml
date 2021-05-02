@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://rescue-respiration.org"
+base_url = "https://felixschloesser.github.io/rescue-respiration-website-test/"
 
 # The site title and description; used in feeds by default.
 title = "Rescue Respiration"
