@@ -1,0 +1,54 @@
+.heading-text {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  padding: 10px 0 25px 0;
+}
+
+.title-text {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--primary-text-color);
+  border-left: var(--primary-color) 8px solid;
+  padding-left: 10px;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--seconday-text-color);
+  border-left: var(--primary-color) 8px solid;
+  padding-left: 10px;
+}
+
+.subtitle-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--primary-text-color);
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
+
+.text {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  color: var(--secondary-text-color);
+}
+
+.subtext {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+}
