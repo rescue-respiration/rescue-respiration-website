@@ -1,33 +1,20 @@
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<section class="text-center">
-    <h1 class="heading-text" style="font-size: 50px">
-        A Respirator for Everyone.
-    </h1>
-    <h3 class="title-text">
-        <b>EasyBreathe</b> is a open source, afforable ventilator to help countries everywhere beat the COVID19 Pandemic.
-    </h3>
-    <div>
-        <a class="github-button" href="https://github.com/huhu/juice" data-size="large" data-show-count="true"
-           aria-label="Star huhu/juice on GitHub">Star</a>
+<section class="hero is-large">
+    <div class="container is-fullhd hero-body">
+        <p class="title is-1 has-text-white">
+            Rescue Respiration
+        </p>
+        <div class="subtitle has-text-white">
+            We build an open source, <b>afforable ventilator</b> to help countries everywhere beat the COVID19 Pandemic.
+        </div>
+        <a href="/" class="  button is-success is-medium">
+            Support us now!
+        </a>
+    </div>
+    <div class="level">
+        <div class="level-item  pb-4" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+            <p class="is-size-3-tablet has-text-white"><b>Learn More ⇩</b></p>
+        </div>
     </div>
 </section>
-<img class="hero-image" style="width: 50%" src="{{ get_url(path="lung-red.svg") }}">
 
-<div class="explore-more text"
-    onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
-    Learn More ⇩
-</div>
-<style>
-    .hero section {
-        padding: 0 5rem;
-    }
-    @media screen and (max-width: 768px) {
-        .hero section {
-            padding: 0 2rem;
-        }
 
-        .hero-image {
-            display: none
-        }
-    }
-</style>

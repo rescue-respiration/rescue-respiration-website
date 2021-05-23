@@ -42,8 +42,8 @@ smart_punctuation = true
 highlight_code = true
 
 [extra]
-juice_logo_name = "Rescue Respiration"
-juice_logo_path = "lung-red.svg"
-juice_extra_menu = [
-    { title = "Github", link = "https://github.com/rescue-respiration/easyBreathe", weight=4}
+logo_name = "Rescue Respiration"
+logo_path = "lung-red.svg"
+external_nav = [
+    { title = "Github", link = "https://github.com/rescue-respiration/", weight=4}
 ]

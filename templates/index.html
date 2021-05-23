@@ -16,14 +16,37 @@
 
 <body>
     {% block header %}
-
-    <header class="pos-absolute" style="background-color: transparent">
+    <section>
+    <header>
         {{ macros::render_header() }}
     </header>
+    </section>
+    {% include '_hero.html' %}
+    
+    <figure class="image is-16by9">
+        <picture>
+            <source srcset="images/DSCF9601@0.5x.webp" type="image/webp">
+            <img src="images/DSCF9601@0.5x.jpeg" alt="logo">
+        </picture>
+    </figure>
 
-    <div class="hero">
-        {% include '_hero.html' %}
-    </div>
+    {% include '_video.html' %}
+
+    <figure class="image is-16by9">
+        <picture>
+            <source srcset="images/DSCF9554@0.5x.webp" type="image/webp">
+            <img src="images/DSCF9554@0.5x.jpeg" alt="logo">
+        </picture>
+    </figure>
+
+    {% include '_usp.html' %}
+
+    <figure class="image is-16by9">
+        <picture>
+            <source srcset="images/DSCF9620@0.5x.webp" type="image/webp">
+            <img src="images/DSCF9620@0.5x.jpeg" alt="logo">
+        </picture>
+    </figure>
 
     {% endblock header %}
 
@@ -56,7 +79,7 @@
 
         <div class="content text">
             {% block content %}
-            <div id="features" class="heading-text">Overview</div>
+            <div id="features" class="heading-text">Timeline</div>
             {{ section.content | safe }}
             {% endblock content %}
         </div>

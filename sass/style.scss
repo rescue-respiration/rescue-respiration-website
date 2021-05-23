@@ -1,24 +1,11 @@
 @import "_ultility.scss";
 @import "_text.scss";
 @import "_markdown.scss";
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
 
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  background-color: var(--secondary-color);
-}
-
-a {
-  text-decoration: none;
-}
 
 ul {
   margin-top: 0.5rem;
-}
-
-ul > li {
-  padding: 0.3rem 0;
 }
 
 p > img {
@@ -43,6 +30,7 @@ header {
   display: flex;
   align-items: center;
   margin: 0 40px;
+  line-height: 1;
 
   img {
     width: 60px;
@@ -57,25 +45,30 @@ header {
   font-weight: bold;
 
   &:hover {
-    color: #000;
+    color: #fffff;
     text-decoration: underline;
   }
+  
+}
+.navbar-item > button {
+  background-color: transparent;
+}
+
+.donate:hover {
+    background-color: #3ec46d;
+    border-color: transparent;
+    color: #fff;
 }
 
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 100vh;
   background-color: var(--primary-color);
-  overflow-x: hidden;
-  padding: 0 40px;
-
   .explore-more {
-    position: absolute;
-    bottom: 20px;
     cursor: pointer;
   }
+}
+
+.explainer-video {
+  background-color: var(--primary-color);
 }
 
 main {
@@ -167,11 +160,7 @@ footer {
 
   .nav-item {
     margin: 0 5px;
-    font-size: 14px;
-  }
-
-  .hero {
-    padding: 40px 30px;
+    font-size: 16px;
   }
 
   main {

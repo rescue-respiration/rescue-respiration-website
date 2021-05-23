@@ -1,127 +1,38 @@
 +++
-title = "Juice"
+title = "Timeline"
 sort_by = "weight"
 +++
 
-# Easy Breathe
+# April
 
-**Juice** is an intuitive, elegant, and responsive Zola theme for product sites.
 
-- Build for product sites
-- Simple and intuitive structure
-- Clean and elegant design
-- Responsive and mobile device compatible
-- Customize and extend friendly
+It is with great sadness that we have to report the death of the initiator, Prof.Dr.med Tilman Mischkowsky. He died after a short, serious illness on April 17, 20 21. He has contributed immensely to this project. We will always honor his memory.
 
-Here is a YouTube video:
 
-{{ youtube(id="76tKJwuuFbU") }}
+# February
 
-# Installation
+The perfection of our device is completed, we are currently preparing the shipment - also difficult because of customs formalities - of 17 copies to Lebanon. Each of these 17 specimens will be subjected to an extremely critical inspection and will be the basis for mass production after arrival in Lebanon.
 
-> **Zola** is a prerequisite. Please refer to the [Zola installation](https://www.getzola.org/documentation/getting-started/installation/) docs.
+We now have almost weekly very intensive contact with Lebanon, we have very knowledgeable PhD biologists there as interlocutors, the cooperation with her is extremely gratifying. So in this respect we are slowly but decisively making progress.
 
-First download this theme to your `themes` directory:
+What is really difficult is the development of an instruction manual. When you consider that a package insert for a simple and practically harmless headache medication is six pages long, it is very understandable that such documentation for our device probably has to have 600 pages if it is to withstand the critical gaze of TÜV Süd. And this is, of course, the condition with which we can enter into actual mass production in Lebanon.
 
-```bash
-$ cd themes
-$ git clone https://github.com/huhu/juice.git
-```
+Due to a lack of our own qualifications, we need external and, by the way, also very expensive support for this, - and this will certainly take another 3-4 weeks until it is ready. We would like to accelerate this to the best of our ability, but we are simply externally determined in this respect.
 
-or add as a submodule
-```bash
-$ git submodule add https://github.com/huhu/juice  themes/juice
-```
 
-and then enable it in your `config.toml`:
+# November 
+The sample has arrived in Lebanon, it has already passed customs, then production preparations can start there.  In about two or three weeks, the first 0-series specimens will be shipped, including the necessary documentation. We are initially thinking of India, but are of course also open to other regions, where - as in the past - the extremely close connection to the BMZ is necessary.
 
-```toml
-theme = "juice"
-```
+If the need in Europe and in South America, and probably also in Africa, continues to increase to the extent feared, we will probably experience completely different challenges, not only for us, but also for our equipment.
 
-# Structure
 
-### Hero
+# September
+The technical perfection of our device by Frank Scholz and his entire team developed into a huge task. As is so often the case, the first 90% of such a device is relatively easy to construct, the perfection for the remaining 10% takes 90% of the commitment.
 
-**Juice** is designed for product websites, hence we let **hero** part fills whole of screen.
-You can customize your **hero** by using `hero` block in the `templates/index.html`.
+The focus of the further development was essentially on safety elements; at no point did we forget that our device will be effective on people who, because they are under anesthesia or deeply sedated, cannot defend themselves against possible errors. Of course, this means that we take on an enormous responsibility; we are always aware of this and take appropriate care.
 
-```html
-{% extends "juice/templates/index.html" %}
-{% block hero %}
-    <div>
-        Your cool hero html...
-    </div>
-{% endblock hero %}
-```
+All of this requires a high level of technical understanding, tremendous care and a fair amount of self-criticism. Two devices are currently at TÜV Süd, which has its own department for testing ventilators. The most difficult tests have already been passed, the remaining tests are much easier to pass, and we expect to master them easily with perhaps some marginal change requests that we can then easily fulfill. The TÜV is also very sympathetic to our project, they are helping us very intensively as far as possible.
 
-### Page
+Parallel to the final inspection by the TÜV, preparations for series production will begin in Lebanon. At the same time, we will initiate the same procedure, i.e. sending a device and the necessary production documents to Turkey and India.
 
-Every markdown file located in `content` directory will become a **Page**. There also will display as
-a navigate link on the top-right corner.
-You can change the frontmatter's `weight` value to sort the order (ascending order).
-
-```
-+++
-title = "Changelog"
-description = "Changelog"
-weight = 2
-+++
-```
-
-### CSS variables
-
-You can override theme variable by creating a file named `_variables.html` in your `templates` directory.
-
-```html
-<style>
-    :root {
-        /* Primary theme color */
-        --primary-color: #FED43F;
-        /* Primary theme text color */
-        --primary-text-color: #543631;
-        /* Primary theme link color */
-        --primary-link-color: #F9BB2D;
-        /* Secondary color: the background body color */
-        --secondary-color: #fcfaf6;
-        --secondary-text-color: #303030;
-        /* Highlight text color of table of content */
-        --toc-highlight-text-color: #d46e13;
-    }
-</style>
-```
-
-# Configuration
-
-You can customize some builtin property in `config.toml` file:
-
-```toml
-[extra]
-juice_logo_name = "Juice"
-juice_logo_path = "juice.svg"
-juice_extra_menu = [
-    { title = "Github", link = "https://github.com/huhu/juice"}
-]
-repository_url = "https://github.com/huhu/juice"
-```
-
-# Shortcodes
-
-**Juice** have some builtin shortcodes available in `templates/shortcodes` directory.
-
-- `issue(id)` - A shortcode to render issue url, e.g. `issue(id=1)` would render to the link `https://github.com/huhu/juice/issue/1`.
-
-> The `repository_url` is required.
-
-# Showcases
-
-Please see the [showcases page](/showcases).
-
-# Contributing
-
-Thank you very much for considering contributing to this project!
-
-We appreciate any form of contribution:
-
-- New issues (feature requests, bug reports, questions, ideas, ...)
-- Pull requests (documentation improvements, code improvements, new features, ...)
+One criterion that still has to be overcome is the local approval of the device in our partner countries. In Germany, we are currently experiencing the tremendous impairment of our normal lives by the virus; in our partner countries, the need is even greater. We hope that this recognizable need will make the formal and regulatory obstacles to the use of the device easier to overcome than before. Our partner in Lebanon has a large and resilient network.
