@@ -16,7 +16,7 @@ In this view one can see a all ventilation parameters. Medical personel can adju
 
 In this view, the medical personel can adjust the threshold values at which they want to be alarmed.
 
-![Screenshot of the Meeting GUI](/images/screenshot_warning.png)
+![Screenshot of the Meeting GUI](/images/screenshot_warnings.png)
 
 Before the device is deployed a few things have to be set from the UI. The network connection is only used when remote maintenace is requested.
 
