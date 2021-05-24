@@ -10,14 +10,22 @@ In order to control the ventilator we developed a intuitive GUI that displays th
 
 ![Screenshot of the Monitoring GUI](/images/screenshot_monitor.png)
 
-On the side you can see a 
+In this view one can see a all ventilation parameters. Medical personel can adjust them by pressing the buttons on the touchscreen.
 
 ![Screenshot of the Settings GUI](/images/screenshot_settings.png)
 
+In this view, the medical personel can adjust the threshold values at which they want to be alarmed.
 
-We need to complete a few installation steps to configure the Raspberry to run our application in Kiosk-mode. This means setting up the system in such way that prevents user interaction and activities on the device outside the scope of execution of our application.
+![Screenshot of the Meeting GUI](/images/screenshot_warning.png)
+
+Before the device is deployed a few things have to be set from the UI. The network connection is only used when remote maintenace is requested.
+
+![Screenshot of the Meeting GUI](/images/screenshot_admin.png)
+
 
 # Installation Instructions
+We need to complete a few installation steps to configure the Raspberry to run our application in Kiosk-mode. This means setting up the system in such way that prevents user interaction and activities on the device outside the scope of execution of our application.
+
 Based heavily on this [blog](http://shallowsky.com/blog/tech/raspberry-pi-kiosk.html).
 
 ### Using Raspian Lite
