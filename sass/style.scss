@@ -52,15 +52,15 @@ header {
 }
 .navbar-item > button {
   background-color: transparent;
+
+}
+
+
+.donate.button.is-white.is-outlined {
+  margin: 0 0 0 1em;
 }
 
 .donate.button.is-white.is-outlined:hover {
-  background-color: #3ec46d;
-  border-color: transparent;
-  color: #fff;
-}
-
-.donate:hover {
     background-color: #3ec46d;
     border-color: transparent;
     color: #fff;
@@ -75,11 +75,17 @@ header {
 
 .explainer-video {
   background-color: var(--primary-color);
+ 
+  a {
+    color: #fcfcfc;
+    text-decoration: underline;
+  }
+
 }
 
 main {
   display: flex;
-  padding: 50px 100px;
+  padding: 50px 48px;
 
   .toc {
     max-width: 260px;
@@ -93,6 +99,7 @@ main {
 
   .toc-item a, .toc-item-child a {
     color: var(--secondary-text-color);
+    font-weight: bold;
 
     &:hover {
       cursor: pointer;
@@ -145,7 +152,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 821px) {
   header {
     padding: 10px 30px;
     flex-direction: column;
@@ -169,7 +176,7 @@ footer {
   }
 
   main {
-    padding: 30px;
+    padding: 0px;
   }
 
   .content {

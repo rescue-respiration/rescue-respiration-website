@@ -1,14 +1,23 @@
 +++
-title = "Documentation"
-description = "Very good Documentation"
-weight = 2
+title = "Software"
+description = "Software"
+weight = 1
 +++
 
-# EasyBreathe
+# Rescue Respiration GUI
+
+In order to control the ventilator we developed a intuitive GUI that displays the current ventilation parameters and plots the current pressure and volume delivered to the patient in each cycle.
+
+![Screenshot of the Monitoring GUI](/images/screenshot_monitor.png)
+
+On the side you can see a 
+
+![Screenshot of the Settings GUI](/images/screenshot_settings.png)
+
 
 We need to complete a few installation steps to configure the Raspberry to run our application in Kiosk-mode. This means setting up the system in such way that prevents user interaction and activities on the device outside the scope of execution of our application.
 
-## Installation Instructions
+# Installation Instructions
 Based heavily on this [blog](http://shallowsky.com/blog/tech/raspberry-pi-kiosk.html).
 
 ### Using Raspian Lite

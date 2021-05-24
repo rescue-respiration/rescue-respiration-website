@@ -1,7 +1,7 @@
 +++
 title = "Imprint"
 description = "Imprint and Data Protection"
-weight = 1
+weight = 2
 +++
 
 On this page we fulfill our legal information obligations according to the German Telemedia Act (TMG) and the General Data Protection Regulation (GDPR). We also provide information on this page on how you can contact us.
