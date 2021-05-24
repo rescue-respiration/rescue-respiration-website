@@ -14,19 +14,20 @@
     {% endblock head %}
 </head>
 
-<body>
+<body class="is-flex is-flex-direction-column" style="min-height: 100vh;">
     {% block header %}
     <section>
-    <header>
-        {{ macros::render_header() }}
-    </header>
+        <header>
+            {{ macros::render_header() }}
+        </header>
     </section>
+
     {% include '_hero.html' %}
     
-    <figure class="image is-16by9">
+    <figure class="image is-16by9" style="background-color: #D8EBFD">
         <picture>
-            <source srcset="images/DSCF9601@0.5x.webp" type="image/webp">
-            <img src="images/DSCF9601@0.5x.jpeg" alt="logo">
+            <source srcset="images/render_1_front_ui.webp" type="image/webp">
+            <img src="images/render_1_front_ui.jpeg" alt="logo">
         </picture>
     </figure>
 
@@ -50,42 +51,49 @@
 
     {% endblock header %}
 
-    <main>
-        {% block toc %}
-        {% if section.toc %}
-        {% set toc = section.toc %}
-        {% elif page.toc %}
-        {% set toc = page.toc %}
-        {% endif %}
-        {% if toc %}
-        <div class="toc">
-            <div class="toc-sticky">
-                {% for h in toc %}
-                <div class="toc-item">
-                    <a class="subtext" href="{{h.permalink | safe}}">{{ h.title }}</a>
+    <main class="is-flex-grow-1">
+       <section id="content" class="section is-medium">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        {% block toc %}
+                        {% if section.toc %}
+                        {% set toc = section.toc %}
+                        {% elif page.toc %}
+                        {% set toc = page.toc %}
+                        {% endif %}
+                        {% if toc %}
+                        <div class="toc">
+                            <div class="toc-sticky">
+                                {% for h in toc %}
+                                <div class="toc-item">
+                                    <a class="subtext" href="{{h.permalink | safe}}">{{ h.title }}</a>
+                                </div>
+                                {% if h.children %}
+                                {% for h2 in h.children %}
+                                <div class="toc-item-child">
+                                    <a class="subtext" href="{{h2.permalink | safe}}"><small>- {{ h2.title }}</small></a>
+                                </div>
+                                {% endfor %}
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% endblock toc %}
+                    </div>
+                    <div class="column is-three-quarters">
+                        <div class="content text">
+                            {% block content %}
+                            <div id="features" class="heading-text">Timeline</div>
+                            {{ section.content | safe }}
+                            {% endblock content %}
+                        </div>
+                    </div>
+
                 </div>
-                {% if h.children %}
-                {% for h2 in h.children %}
-                <div class="toc-item-child">
-                    <a class="subtext" href="{{h2.permalink | safe}}"><small>- {{ h2.title }}</small></a>
-                </div>
-                {% endfor %}
-                {% endif %}
-                {% endfor %}
             </div>
-        </div>
-        {% endif %}
-        {% endblock toc %}
-
-        <div class="content text">
-            {% block content %}
-            <div id="features" class="heading-text">Timeline</div>
-            {{ section.content | safe }}
-            {% endblock content %}
-        </div>
-
-        {% block sidebar %}
-        {% endblock %}
+        </section>
     </main>
 
     {% block footer %}

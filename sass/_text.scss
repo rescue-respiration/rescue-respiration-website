@@ -17,9 +17,9 @@
 h1 {
   font-family: "Inter", sans-serif;
   font-size: 25px;
-  font-weight: 500;
-  color: var(--seconday-text-color);
-  border-left: var(--primary-color) 8px solid;
+  font-weight: 600;
+  color: var(--secondary-text-color) !important;
+  border-left: var(--secondary-color) 8px solid;
   padding-left: 10px;
 }
 
@@ -27,7 +27,7 @@ h1 {
   font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  color: var(--primary-text-color);
+  color: var(--primary-text-color) ;
 }
 
 h2 {
