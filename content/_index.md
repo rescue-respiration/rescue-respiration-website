@@ -6,16 +6,16 @@ sort_by = "weight"
 # April
 
 
-It is with great sadness that we have to report the death of the initiator, Prof.Dr.med Tilman Mischkowsky. He died after a short, serious illness on April 17, 20 21. He has contributed immensely to this project. We will always honor his memory.
+It is with great sadness that we have to report the death of the initiator, Prof.Dr.med Tilman Mischkowsky. He died after a short, serious illness on April 17, 2021. He has contributed immensely to this project. We will always honor his memory.
 
 
 # February
 
-The perfection of our device is completed, we are currently preparing the shipment - also difficult because of customs formalities - of 17 copies to Lebanon. Each of these 17 specimens will be subjected to an extremely critical inspection and will be the basis for mass production after arrival in Lebanon.
+Device is completed. We are currently preparing the shipment - challenging because of customs formalities - of 17 devices to Lebanon. Each one will be subjected to critical inspection to then become be the basis for mass production in the factory on site.
 
-We now have almost weekly very intensive contact with Lebanon, we have very knowledgeable PhD biologists there as interlocutors, the cooperation with her is extremely gratifying. So in this respect we are slowly but decisively making progress.
+We are now in weekly contact with Lebanon, where we have a very knowledgeable PhD biologists there as interlocutors, the cooperation with her is extremely gratifying. So in this respect we are slowly but decisively making progress.
 
-What is really difficult is the development of an instruction manual. When you consider that a package insert for a simple and practically harmless headache medication is six pages long, it is very understandable that such documentation for our device probably has to have 600 pages if it is to withstand the critical gaze of TÜV Süd. And this is, of course, the condition with which we can enter into actual mass production in Lebanon.
+What is really difficult is the development of an instruction manual. When you consider that a package insert for a simple and practically harmless headache medication is six pages long, it is very understandable that such documentation for our device probably has to have 600 pages if it is to withstand the critical gaze of TÜV Süd. And this is, of course, the condition for entering actual mass production.
 
 Due to a lack of our own qualifications, we need external and, by the way, also very expensive support for this, - and this will certainly take another 3-4 weeks until it is ready. We would like to accelerate this to the best of our ability, but we are simply externally determined in this respect.
 
@@ -31,7 +31,7 @@ The technical perfection of our device by Frank Scholz and his entire team devel
 
 The focus of the further development was essentially on safety elements; at no point did we forget that our device will be effective on people who, because they are under anesthesia or deeply sedated, cannot defend themselves against possible errors. Of course, this means that we take on an enormous responsibility; we are always aware of this and take appropriate care.
 
-All of this requires a high level of technical understanding, tremendous care and a fair amount of self-criticism. Two devices are currently at TÜV Süd, which has its own department for testing ventilators. The most difficult tests have already been passed, the remaining tests are much easier to pass, and we expect to master them easily with perhaps some marginal change requests that we can then easily fulfill. The TÜV is also very sympathetic to our project, they are helping us very intensively as far as possible.
+All of this requires a high level of technical understanding, tremendous care and a fair amount of self-criticism. Two devices are currently at TÜV Süd, which has its own department for testing ventilators. The most difficult tests have already been passed, the remaining tests are much easier to pass, and we expect to master them easily with perhaps some marginal change requests that we can then easily fulfill. The TÜV is very sympathetic to our project.
 
 Parallel to the final inspection by the TÜV, preparations for series production will begin in Lebanon. At the same time, we will initiate the same procedure, i.e. sending a device and the necessary production documents to Turkey and India.
 
