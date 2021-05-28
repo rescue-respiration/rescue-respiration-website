@@ -2,7 +2,7 @@
 @import "_text.scss";
 @import "_markdown.scss";
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
 
 ul {
   margin-top: 0.5rem;
@@ -23,7 +23,7 @@ header {
 }
 
 .logo {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Chivo", sans-serif;
   font-weight: bold;
   font-size: 32px;
   color: var(--primary-text-color);
@@ -48,7 +48,7 @@ header {
     color: var(--primary-link-color);
     text-decoration: underline;
   }
-  
+
 }
 .navbar-item > button {
   background-color: transparent;
@@ -75,7 +75,7 @@ header {
 
 .explainer-video {
   background-color: var(--primary-color);
- 
+
   a {
     color: #fcfcfc;
     text-decoration: underline;
