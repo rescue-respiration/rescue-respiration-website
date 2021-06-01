@@ -8,20 +8,21 @@ weight = 1
 
 In order to control the ventilator we developed a intuitive GUI that displays the current ventilation parameters and plots the current pressure and volume delivered to the patient in each cycle.
 
-![Screenshot of the Monitoring GUI](/images/screenshot_monitor.png)
+{{ image(path="/images/screenshot_monitor.png", alt="Monitor View of the ventilatior GUI", caption="Monitor View of the ventilatior GUI") }}
+
 
 In this view one can see a all ventilation parameters. Medical personel can adjust them by pressing the buttons on the touchscreen.
 
-![Screenshot of the Settings GUI](/images/screenshot_settings.png)
+{{ image(path="/images/screenshot_settings.png", alt="Settings View of the ventilatior GUI", caption="Settings View of the ventilatior GUI") }}
+
 
 In this view, the medical personel can adjust the threshold values at which they want to be alarmed.
 
-![Screenshot of the Meeting GUI](/images/screenshot_warnings.png)
+{{ image(path="/images/screenshot_warnings.png", alt="Warning View of the ventilatior GUI", caption="Warning View of the ventilatior GUI") }}
 
 Before the device is deployed a few things have to be set from the UI. The network connection is only used when remote maintenace is requested.
 
-![Screenshot of the Meeting GUI](/images/screenshot_admin.png)
-
+{{ image(path="/images/screenshot_admin.png", alt="Admin View of the ventilatior GUI", caption="Admin View of the ventilatior GUI") }}
 
 # Installation Instructions
 We need to complete a few installation steps to configure the Raspberry to run our application in Kiosk-mode. This means setting up the system in such way that prevents user interaction and activities on the device outside the scope of execution of our application.
@@ -39,14 +40,16 @@ We may want to use ssh inside our home network while debugging, even though the 
 1. An empty file named *ssh*, easily created using `touch /mnt/ssh`.
 2. A file named *wpa_supplicant.conf* with the settings for the local network:
 
-        ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-        update_config=1
+{% code(lang="config") %}
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
 
-        network={
-            ssid="MY-WIFI-SSID"
-            psk="MY-WIFI-PASSWORD"
-            priority=10
-        }
+network={
+    ssid="MY-WIFI-SSID"
+    psk="MY-WIFI-PASSWORD"
+    priority=10
+}
+{% end %}
 
 Then unmount that partition using `sudo umount /mnt`
 
@@ -66,14 +69,21 @@ Boot the Pi with a monitor attached, log in as the pi user, run `sudo raspi-conf
 
 To make sure the installation won't become too bloated, create the file */etc/apt/apt.conf* containing:
 
-    APT::Install-Recommends "false";
-    APT::Install-Suggests "false";
+{% code(lang="config") %}
+APT::Install-Recommends "false";
+APT::Install-Suggests "false";
+{% end %}
 
-Update the OS, and install the packages needed to run X, the Openbox window manager, a terminal (I used xterm in this example), and a text editor. If you're in a hurry, you can skip the update and dist-upgrade steps.
+Update the OS, and install the packages needed to run X, the Openbox window manager, a terminal (I used xterm in this example), and a text editor.
 
-    $ sudo apt update
-    $ sudo apt dist-upgrade
-    $ sudo apt install xserver-xorg x11-xserver-utils xinit openbox xterm
+`sudo apt update`
+
+`sudo apt install xserver-xorg x11-xserver-utils xinit openbox xterm`
+
+If you're in a hurry, you can skip the following dist-upgrade step.
+`sudo apt dist-upgrade`
+
+
 
 ### Installing the application-specific dependencies:
 We start by installing pip and the Tk bindings: `sudo apt install python3-pip python3-tk`
@@ -84,15 +94,17 @@ Then install the needed python modules *matplotlib* and *pandas* using pip: `pyt
 Start by creating the Openbox configuration directory: `mkdir -p .config/openbox`
 Create a file *.config/openbox/autostart* containing:
 
-    # Disable screen saver/screen blanking/power management
-    xset s off
-    xset s noblank
-    xset -dpms
+{% code(lang="sh") %}
+# Disable screen saver/screen blanking/power management
+xset s off
+xset s noblank
+xset -dpms
 
-    # Start a terminal
-    xterm &
+# Start a terminal
+xterm &
+{% end %}
 
-Save the file, and test to make sure you can run X: `$ startx`
+Save the file, and test to make sure you can run X: `startx`
 
 You should see a black screen, a mouse pointer, and after a few seconds, a small xterm window in the center of the screen. You can use the xterm to fiddle with things you want to change, or you can right-click anywhere outside the xterm window to get a menu that will let you exit X and go back to the bare console.
 
@@ -100,7 +112,9 @@ You should see a black screen, a mouse pointer, and after a few seconds, a small
 
 As we are using a touchscreen, we want to remove that annoying mouse pointer arrow. Add this to your *.bash_profile*:
 
-    [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && startx -- -nocursor
+{% code(lang="sh") %}
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && startx -- -nocursor
+{% end %}
 
 If you are stuck in the kiosk-view, you can still ssh-in from another machine and use `killall python3` to force quit the application.
 
@@ -108,7 +122,9 @@ If you are stuck in the kiosk-view, you can still ssh-in from another machine an
 We are using the 7inch HDMI Display-C-1024X600(MPI7002) which needs special drivers in order to work properly.
 
 `git clone https://github.com/goodtft/LCD-show.git`
+
 `chmod -R 755 LCD-show`
+
 `cd LCD-show/`
 
 Here we find a bunch of different drivers, but because we are using the 7inch variant with a 1024X600 resolution we need to select the apropriate driver.
@@ -116,6 +132,7 @@ Here we find a bunch of different drivers, but because we are using the 7inch va
 
 ## Python Requirements
 `python3 -m pip install --upgrade pip`
+
 `python3 -m pip install -r requirements.txt`
 
 ### Numpy specific Requirements
