@@ -9,7 +9,9 @@
 
 <nav>
     {% for page in section.pages %}
-    <a class="nav-item subtitle-text" href="{{ page.permalink }}">{{ page.title }}</a>
+        {% if not page.title == 'Donate' %}
+            <a class="nav-item subtitle-text" href="{{ page.permalink }}">{{ page.title }}</a>
+        {% endif %}
     {% endfor %}
     {% if config.extra.extra_menu %}
         {% for menu in config.extra.extra_menu %}
@@ -17,6 +19,6 @@
         {% endfor %}
     {% endif %}
     <a href="mailto:info@rescue-respiration.org" class="nav-item subtitle-text">Contact</a>
-    <a href="/donate.html" class="button is-white is-small is-outlined donate">Donate</a>
+    <a href="donate" class="button is-white is-small is-outlined donate">Donate</a>
 </nav>
 {% endmacro render_header %}
