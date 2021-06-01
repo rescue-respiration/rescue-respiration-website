@@ -145,6 +145,11 @@ footer {
   }
 }
 
+.notch-safe {
+  padding-left: m#{a}x(0px, env(safe-area-inset-left));
+  padding-right: m#{a}x(0px, env(safe-area-inset-right));
+}
+
 @media screen and (min-width: 1280px) {
   .content {
     max-width: 60%;

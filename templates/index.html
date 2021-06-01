@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no viewport-fit=cover">
 
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
@@ -40,7 +40,7 @@
     {% endblock head %}
 </head>
 
-<body class="is-flex is-flex-direction-column" style="min-height: 100vh;">
+<body class="notch-safe is-flex is-flex-direction-column" style="min-height: 100vh;">
     {% block header %}
     <section>
         <header>
