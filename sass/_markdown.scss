@@ -1,18 +1,20 @@
+
 .content {
   padding: 0 0 0 3em;
 }
 
 .content code {
-  color: grey;
-  font-size: .875em;
-  font-weight: normal;
   padding: 0.25em 0.5em;
-  font-family: monospace;
 }
 
-.content pre code {
-  padding: 0;
+.content .code-block {
+  color: var(--primary-text-color);
+  background-color: var(--primary-color);
+  padding: 1em;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
+
 
 .content a {
   color: var(--primary-link-color);
