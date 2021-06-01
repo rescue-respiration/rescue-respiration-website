@@ -8,10 +8,12 @@
 }
 
 .content .code-block {
+  font-size: .7em;
   color: var(--primary-text-color);
   background-color: var(--primary-color);
   padding: 1em;
   word-wrap: break-word;
+  word-break: break-all;
   white-space: pre-wrap;
 }
 

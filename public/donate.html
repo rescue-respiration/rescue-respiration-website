@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rescue Respiration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+    :root {
+        --mikado-yellow: #fec601;
+        --rosso-corosa: #ff312e;
+        --smoky-black: #1c110a;
+        --yellow-green-color-wheel: #24a810;
+        --white:  #ffffff;
+        --baby-pouder: #fcfaf6;
+        --beau-blue: #d8ebfd;
+        --blue-saphire: #19647e;
+        --gunmetal:  #071b22;
+        --teal-blue: #2e728a;
+
+        /* Primary theme color */
+        --primary-color: var(--gunmetal);
+        /* Primary theme text color */
+        --primary-text-color: var(--white);
+        /* Primary theme link color */
+        --primary-link-color: var(--rosso-corosa);
+        /* Secondary color: the background body color */
+        --secondary-color: var(--rosso-corosa);
+        --secondary-text-color: var(--smoky-black);
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: var(--rosso-corosa)
+    }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/style.css">
+    
+    
+</head>
+
+<body class="is-flex is-flex-direction-column" style="min-height: 100vh;">
+    
+    <section>
+    <header>
+        
+
+<a href="/">
+    <div class="logo">
+        <img src="/lung-red.svg" alt="logo">
+        Rescue Respiration
+    </div>
+</a>
+
+<nav>
+        
+    <a class="nav-item subtitle-text" href="/software">Software</a>
+    
+    <a class="nav-item subtitle-text" href="/imprint">Imprint</a>
+    
+    <a class="nav-item subtitle-text" href="mailto:info@rescue-respiration.org">Contact</a>
+    
+    <a class="button is-white is-small is-outlined donate" href="/donate.html">Donate</a>
+</nav>
+</header>
+</section>
+    <main class="is-flex-grow-1">
+    <section class="section">
+        <div class="container is-desktop">
+             <div class="content text">
+            
+                <div class="heading-text">Donations</div>
+
+                <p>
+                    Unfortunately, we are currently unable to issue donation certificates as we are waiting for the tax office to confirm our non-profit status.<br>
+                    We therfore kindly request you to wait a few weeks before you complete your donation.
+                </p>
+                <p>
+                    If you are nonetheless willing to donate, feel free to contact us.
+                </p>
+
+                <a class="button is-dark" href="mailto:info@rescue-respiration.org">Contact us.</a>
+
+            </div>
+        </div>
+
+    </section>
+
+
+        
+        
+    </main>
+
+    
+    <footer>
+        <small class="has-text-white">
+    <p>Supported by the <a href="https://www.bmz.de/en/">Ministry for Economic Cooperation and Development (BMZ)</a> of Germany<p>
+    <p>Contents under CC-BY-SA 4.0</p>
+</small>
+
+    </footer>
+    
+<script src="/livereload.js?port=1024&amp;mindelay=10"></script></body>
+<script>
+    function highlightNav(heading) {
+        let pathname = location.pathname;
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+        document.querySelector(".toc a[href$='" + pathname + "#" + heading + "']").classList.add("active");
+    }
+
+    let currentHeading = "";
+    window.onscroll = function () {
+        let h = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+        let elementArr = [];
+
+        h.forEach(item => {
+            if (item.id !== "") {
+                elementArr[item.id] = item.getBoundingClientRect().top;
+            }
+        });
+        elementArr.sort();
+        for (let key in elementArr) {
+            if (!elementArr.hasOwnProperty(key)) {
+                continue;
+            }
+            if (elementArr[key] > 0 && elementArr[key] < 300) {
+                if (currentHeading !== key) {
+                    highlightNav(key);
+                    currentHeading = key;
+                }
+                break;
+            }
+        }
+    }
+</script>
+
+</html>
