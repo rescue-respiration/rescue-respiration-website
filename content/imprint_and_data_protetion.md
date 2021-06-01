@@ -9,23 +9,21 @@ On this page we fulfill our legal information obligations according to the Germa
 # Imprint
 Allgemeine Informationspflichten nach § 5 Telemediengesetz (TMG):
 
-## Name und Anschrift
+### Name und Anschrift
 TM Rescue-Respiration UG (haftungsbeschränkt)<br>
 Heimfelder Str. 92<br>
 21075 Hamburg<br>
 
-### Kontakt
 **E-Mail:** [info@rescue-respiration.org](mailto:info@rescue-respiration.org)
 
-### Vertretungsberechtigter
-**Geschäftsführer:** Johann Kipping
+**Vertretungsberechtigter:** Johann Kipping, Geschäftsführer
+
+**Umsatzsteuer Identifikationsnummer:** 12714701175
 
 ### Handelsregister:
 Amtsgericht Kempten (Allgäu) - HRB 15728
 
 
-### Umsatzsteuer
-**Identifikationsnummer:** 12714701175
 
 
 
