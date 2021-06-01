@@ -9,12 +9,14 @@
 
 <nav>
     {% for page in section.pages %}
-        {% if not page.title == 'Donate' %}
+        {% if page.title == 'Donate'  %}
+        {% elif page.title == 'Imprint' %}
+        {% else %}
             <a class="nav-item subtitle-text" href="{{ page.permalink }}">{{ page.title }}</a>
         {% endif %}
     {% endfor %}
-    {% if config.extra.extra_menu %}
-        {% for menu in config.extra.extra_menu %}
+    {% if config.extra.external_nav %}
+        {% for menu in config.extra.external_nav %}
         <a class="nav-item subtitle-text" href="{{ menu.link }}">{{ menu.title }}</a>
         {% endfor %}
     {% endif %}
