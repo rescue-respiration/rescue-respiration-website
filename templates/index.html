@@ -78,43 +78,41 @@
     {% endblock header %}
 
     <main class="is-flex-grow-1">
-        <section class="section">
-            <div class="container is-desktop" style="display: flex;">
+        <section class="section container is-desktop" style="display: flex;">
 
-                {% block toc %}
-                {% if section.toc %}
-                {% set toc = section.toc %}
-                {% elif page.toc %}
-                {% set toc = page.toc %}
-                {% endif %}
-                {% if toc %}
-                <div class="toc">
-                    <div class="toc-sticky">
-                        {% for h in toc %}
-                        <div class="toc-item">
-                            <a class="subtext" href="{{h.permalink | safe}}">{{ h.title }}</a>
-                        </div>
-                        {% if h.children %}
-                        {% for h2 in h.children %}
-                        <div class="toc-item-child">
-                            <a class="subtext" href="{{h2.permalink | safe}}"><small>- {{ h2.title }}</small></a>
-                        </div>
-                        {% endfor %}
-                        {% endif %}
-                        {% endfor %}
+            {% block toc %}
+            {% if section.toc %}
+            {% set toc = section.toc %}
+            {% elif page.toc %}
+            {% set toc = page.toc %}
+            {% endif %}
+            {% if toc %}
+            <div class="toc">
+                <div class="toc-sticky">
+                    {% for h in toc %}
+                    <div class="toc-item">
+                        <a class="subtext" href="{{h.permalink | safe}}">{{ h.title }}</a>
                     </div>
+                    {% if h.children %}
+                    {% for h2 in h.children %}
+                    <div class="toc-item-child">
+                        <a class="subtext" href="{{h2.permalink | safe}}"><small>- {{ h2.title }}</small></a>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                    {% endfor %}
                 </div>
-                {% endif %}
-                {% endblock toc %}
-
-                <div class="content text">
-                    {% block content %}
-                    <div id="features" class="heading-text" style="margin-bottom: 0px;">Timeline</div>
-                    {{ section.content | safe }}
-                    {% endblock content %}
-                </div>
-
             </div>
+            {% endif %}
+            {% endblock toc %}
+
+            <div class="content text">
+                {% block content %}
+                    <div id="timeline" class="heading-text" style="margin-bottom: 0px;">Timeline</div>
+                    {{ section.content | safe }}
+                {% endblock content %}
+            </div>
+
         </section>
     </main>
 
