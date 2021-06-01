@@ -3,74 +3,85 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Rescue Respiration</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no viewport-fit=cover">
+
+    <title>Donate | Rescue Respiration</title>
+
+    <!--Stylesheets-->
     <style>
-    :root {
-        --mikado-yellow: #fec601;
-        --rosso-corosa: #ff312e;
-        --smoky-black: #1c110a;
-        --yellow-green-color-wheel: #24a810;
-        --white:  #ffffff;
-        --baby-pouder: #fcfaf6;
-        --beau-blue: #d8ebfd;
-        --blue-saphire: #19647e;
-        --gunmetal:  #071b22;
-        --teal-blue: #2e728a;
+        :root {
+            --mikado-yellow: #fec601;
+            --rosso-corosa: #ff312e;
+            --smoky-black: #1c110a;
+            --yellow-green-color-wheel: #24a810;
+            --white:  #ffffff;
+            --baby-pouder: #fcfaf6;
+            --beau-blue: #d8ebfd;
+            --blue-saphire: #19647e;
+            --gunmetal:  #071b22;
+            --teal-blue: #2e728a;
 
-        /* Primary theme color */
-        --primary-color: var(--gunmetal);
-        /* Primary theme text color */
-        --primary-text-color: var(--white);
-        /* Primary theme link color */
-        --primary-link-color: var(--rosso-corosa);
-        /* Secondary color: the background body color */
-        --secondary-color: var(--rosso-corosa);
-        --secondary-text-color: var(--smoky-black);
-        /* Highlight text color of table of content */
-        --toc-highlight-text-color: var(--rosso-corosa)
-    }
+            /* Primary theme color */
+            --primary-color: var(--gunmetal);
+            /* Primary theme text color */
+            --primary-text-color: var(--white);
+            /* Primary theme link color */
+            --primary-link-color: var(--rosso-corosa);
+            /* Secondary color: the background body color */
+            --secondary-color: var(--rosso-corosa);
+            --secondary-text-color: var(--smoky-black);
+            /* Highlight text color of table of content */
+            --toc-highlight-text-color: var(--rosso-corosa)
+        }
     </style>
+    <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/normalize.css">
-    <link rel="stylesheet" href="/style.css">
-    
-    
+    <!--Open Graph-->
+    <meta name="description" content="A open source, afforable ventilator to help countries everywhere beat the COVID19 Pandemic.">
+    <meta property="og:title" content="Rescue Resipiration">
+    <meta property="og:description" content="A open source, afforable ventilator to help countries everywhere beat the COVID19 Pandemic.">
+    <meta property="og:image" content="https://www.rescue-respiration.org/images/DSCF9601.JPG">
+    <meta property="og:image:alt" content="Person working on Ventilator in Hospital.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="Person working on Ventilator in Hospital">
+    <meta property="og:url" content="https://www.rescue-respiration.org/">
+    <link rel="canonical" href="https://www.rescue-respiration.org/">
+
+
+    <!--Favicon-->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#071b22">
+
+    <!--Additional Head-->
+    {% block head %}
+    {% endblock head %}
 </head>
 
-<body class="is-flex is-flex-direction-column" style="min-height: 100vh;">
-    
+<body class="notch-safe is-flex is-flex-direction-column" style="min-height: 100vh;">
     <section>
-    <header>
-        
-
-<a href="/">
-    <div class="logo">
-        <img src="/lung-red.svg" alt="logo">
-        Rescue Respiration
-    </div>
-</a>
-
-<nav>
-        
-    <a class="nav-item subtitle-text" href="/software">Software</a>
-    
-    <a class="nav-item subtitle-text" href="/imprint">Imprint</a>
-    
-    <a class="nav-item subtitle-text" href="mailto:info@rescue-respiration.org">Contact</a>
-    
-    <a class="button is-white is-small is-outlined donate" href="/donate.html">Donate</a>
-</nav>
-</header>
-</section>
+        <header>
+            <a href="/">
+                <div class="logo">
+                    <img src="/lung-red.svg" alt="logo">
+                    Rescue Respiration
+                </div>
+            </a>
+            <nav>
+                <a class="nav-item subtitle-text" href="/software">Software</a>
+                <a class="nav-item subtitle-text" href="/imprint">Imprint</a>
+                <a class="nav-item subtitle-text" href="mailto:info@rescue-respiration.org">Contact</a>
+                <a class="button is-white is-small is-outlined donate" href="/donate.html">Donate</a>
+            </nav>
+        </header>
+    </section>
     <main class="is-flex-grow-1">
     <section class="section">
         <div class="container is-desktop">
              <div class="content text">
-            
                 <div class="heading-text">Donations</div>
-
                 <p>
                     Unfortunately, we are currently unable to issue donation certificates as we are waiting for the tax office to confirm our non-profit status.<br>
                     We therfore kindly request you to wait a few weeks before you complete your donation.
@@ -78,62 +89,52 @@
                 <p>
                     If you are nonetheless willing to donate, feel free to contact us.
                 </p>
-
                 <a class="button is-dark" href="mailto:info@rescue-respiration.org">Contact us.</a>
-
             </div>
         </div>
-
     </section>
-
-
-        
-        
     </main>
-
-    
     <footer>
         <small class="has-text-white">
-    <p>Supported by the <a href="https://www.bmz.de/en/">Ministry for Economic Cooperation and Development (BMZ)</a> of Germany<p>
-    <p>Contents under CC-BY-SA 4.0</p>
-</small>
-
+            <p>Supported by the <a href="https://www.bmz.de/en/">Ministry for Economic Cooperation and Development (BMZ) </a>of Germany<p>
+            <p>Contents under CC-BY-SA 4.0, source under the <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL</a>.</p>
+        </small>
     </footer>
-    
-<script src="/livereload.js?port=1024&amp;mindelay=10"></script></body>
-<script>
-    function highlightNav(heading) {
-        let pathname = location.pathname;
-        document.querySelectorAll(".toc a").forEach((item) => {
-            item.classList.remove("active");
-        });
-        document.querySelector(".toc a[href$='" + pathname + "#" + heading + "']").classList.add("active");
-    }
 
-    let currentHeading = "";
-    window.onscroll = function () {
-        let h = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
-        let elementArr = [];
+    <script src="/livereload.js?port=1024&amp;mindelay=10"></script></body>
+    <script>
+        function highlightNav(heading) {
+            let pathname = location.pathname;
+            document.querySelectorAll(".toc a").forEach((item) => {
+                item.classList.remove("active");
+            });
+            document.querySelector(".toc a[href$='" + pathname + "#" + heading + "']").classList.add("active");
+        }
 
-        h.forEach(item => {
-            if (item.id !== "") {
-                elementArr[item.id] = item.getBoundingClientRect().top;
-            }
-        });
-        elementArr.sort();
-        for (let key in elementArr) {
-            if (!elementArr.hasOwnProperty(key)) {
-                continue;
-            }
-            if (elementArr[key] > 0 && elementArr[key] < 300) {
-                if (currentHeading !== key) {
-                    highlightNav(key);
-                    currentHeading = key;
+        let currentHeading = "";
+        window.onscroll = function () {
+            let h = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+            let elementArr = [];
+
+            h.forEach(item => {
+                if (item.id !== "") {
+                    elementArr[item.id] = item.getBoundingClientRect().top;
                 }
-                break;
+            });
+            elementArr.sort();
+            for (let key in elementArr) {
+                if (!elementArr.hasOwnProperty(key)) {
+                    continue;
+                }
+                if (elementArr[key] > 0 && elementArr[key] < 300) {
+                    if (currentHeading !== key) {
+                        highlightNav(key);
+                        currentHeading = key;
+                    }
+                    break;
+                }
             }
         }
-    }
-</script>
-
+    </script>
+    </body>
 </html>
