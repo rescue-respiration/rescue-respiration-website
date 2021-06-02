@@ -11,27 +11,26 @@
     <!--Stylesheets-->
     {% include "_variables.html" %}
 
-    <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
+    <link rel="stylesheet" href="/style.css">
+
+    <!--Favicon-->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#071b22">
 
     <!--Open Graph-->
     <meta name="description" content="A open source, afforable ventilator to help countries everywhere beat the COVID19 Pandemic.">
     <meta property="og:title" content="Rescue Resipiration">
     <meta property="og:description" content="A open source, afforable ventilator to help countries everywhere beat the COVID19 Pandemic.">
-    <meta property="og:image" content="https://www.rescue-respiration.org/images/DSCF9601.JPG">
+    <meta property="og:image" content="/images/og_preview.jpg">
     <meta property="og:image:alt" content="Person working on Ventilator in Hospital.">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="Person working on Ventilator in Hospital">
     <meta property="og:url" content="https://www.rescue-respiration.org/">
     <link rel="canonical" href="https://www.rescue-respiration.org/">
-
-
-    <!--Favicon-->
-    <link rel="icon" href="{{ get_url(path="favicon.ico") }}">
-    <link rel="icon" href="{{ get_url(path="favicon.svg") }}" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="{{ get_url(path="apple-touch-icon.png") }}"
-    <meta name="theme-color" content="#071b22">
-
+    
     <!--Additional Head-->
     {% block head %}
     {% endblock head %}
