@@ -14,7 +14,7 @@ Device is completed. We are currently preparing the shipment - challenging becau
 
 We are now in weekly contact with Lebanon, where we have a very knowledgeable PhD biologists there as interlocutors, the cooperation with her is extremely gratifying. So in this respect we are slowly but decisively making progress.
 
-What is really difficult is the development of an instruction manual. When you consider that a package insert for a simple and practically harmless headache medication is six pages long, it is very understandable that such documentation for our device probably has to have 600 pages if it is to withstand the critical gaze of TÜV Süd. And this is, of course, the condition for entering actual mass production.
+What is really difficult is the development of an instruction manual. When you consider that a package insert for a simple and practically harmless headache medication is six pages long, it is very understandable that such documentation for our device probably has to have 600 pages if it is to withstand the critical gaze of the regulatory bodies. And this is, of course, the condition for entering actual mass production.
 
 Due to a lack of our own qualifications, we need external and, by the way, also very expensive support for this, - and this will certainly take another 3-4 weeks until it is ready. We would like to accelerate this to the best of our ability, but we are simply externally determined in this respect.
 
@@ -30,8 +30,8 @@ The technical perfection of our device by Frank Scholz and his entire team devel
 
 The focus of the further development was essentially on safety elements; at no point did we forget that our device will be effective on people who, because they are under anesthesia or deeply sedated, cannot defend themselves against possible errors. Of course, this means that we take on an enormous responsibility; we are always aware of this and take appropriate care.
 
-All of this requires a high level of technical understanding, tremendous care and a fair amount of self-criticism. Two devices are currently at TÜV Süd, which has its own department for testing ventilators. The most difficult tests have already been passed, the remaining tests are much easier to pass, and we expect to master them easily with perhaps some marginal change requests that we can then easily fulfill. The TÜV is very sympathetic to our project.
+All of this requires a high level of technical understanding, tremendous care and a fair amount of self-criticism. Two devices are currently performing tests, which has its own department for testing ventilators. The most difficult tests have already been passed, the remaining tests are much easier to pass, and we expect to master them easily with perhaps some marginal change requests that we can then easily fulfill.
 
-Parallel to the final inspection by the TÜV, preparations for series production will begin in Lebanon. At the same time, we will initiate the same procedure, i.e. sending a device and the necessary production documents to Turkey and India.
+Parallel to the final inspection by independent technicals inspectors, preparations for series production will begin in Lebanon. At the same time, we will initiate the same procedure, i.e. sending a device and the necessary production documents to Turkey and India.
 
 One criterion that still has to be overcome is the local approval of the device in our partner countries. In Germany, we are currently experiencing the tremendous impairment of our normal lives by the virus; in our partner countries, the need is even greater. We hope that this recognizable need will make the formal and regulatory obstacles to the use of the device easier to overcome than before. Our partner in Lebanon has a large and resilient network.
