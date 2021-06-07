@@ -21,7 +21,7 @@
 .content a {
   color: var(--primary-link-color);
 
-  &:hover {
+  &:hover :not(.button) {
     text-decoration: underline;
   }
 }
