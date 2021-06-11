@@ -11,8 +11,8 @@ Allgemeine Informationspflichten nach § 5 Telemediengesetz (TMG):
 
 ### Name und Anschrift
 TM Rescue-Respiration UG (haftungsbeschränkt)<br>
-Heimfelder Str. 92<br>
-21075 Hamburg<br>
+Düwellstraße 17<br>
+87435 Kempten (Allgäu)<br>
 
 **E-Mail:** [info@rescue-respiration.org](mailto:info@rescue-respiration.org)
 
