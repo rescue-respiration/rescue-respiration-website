@@ -5,8 +5,6 @@ weight = 99
 template = "donate.html"
 +++
 
-Unfortunately, we are currently unable to issue donation certificates as we are waiting for the tax office to confirm our non-profit status.
-We therfore kindly request you to wait a few weeks before you complete your donation.
-                
-If you are nonetheless willing to donate, feel free to contact us.
+All help is greatly apreciated. If you are interested in making a donation, please contact us using the link below.
 
+We are able to issue donation certiciates, as we qualify as a non-profit according to § 52 of the German Fiscal Code (Gemeinnützig nach § 52 der Abgabenordnung).
