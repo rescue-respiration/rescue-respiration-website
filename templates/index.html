@@ -73,7 +73,6 @@
 
     {% endblock header %}
 
-    {#
     <main class="is-flex-grow-1">
         <section class="section container is-desktop" style="display: flex;">
 
@@ -105,14 +104,12 @@
 
             <div class="content text">
                 {% block content %}
-                    <div id="timeline" class="heading-text" style="margin-bottom: 0px;">Timeline</div>
-                    {{ section.content | safe }}
+                    
                 {% endblock content %}
             </div>
 
         </section>
     </main>
-    #}
 
     {% block footer %}
     <footer>
