@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no viewport-fit=cover">
+
+    <title>Software | Rescue Respiration </title>
+
+    <!--Stylesheets-->
+    <style>
+    :root {
+        --mikado-yellow: #fec601;
+        --rosso-corosa: #ff312e;
+        --smoky-black: #1c110a;
+        --yellow-green-color-wheel: #24a810;
+        --white:  #ffffff;
+        --baby-pouder: #fcfaf6;
+        --beau-blue: #d8ebfd;
+        --blue-saphire: #19647e;
+        --gunmetal:  #071b22;
+        --teal-blue: #2e728a;
+
+        /* Primary theme color */
+        --primary-color: var(--gunmetal);
+        /* Primary theme text color */
+        --primary-text-color: var(--white);
+        /* Primary theme link color */
+        --primary-link-color: var(--rosso-corosa);
+        /* Secondary color: the background body color */
+        --secondary-color: var(--rosso-corosa);
+        --secondary-text-color: var(--smoky-black);
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: var(--rosso-corosa)
+    }
+</style>
+
+
+    <link rel="stylesheet" href="/style.css">
+
+    <!--Favicon-->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#071b22">
+
+    <!--Open Graph-->
+    <meta name="description" content="A open source, afforable ventilator to help countries everywhere beat the COVID19 Pandemic.">
+    <meta property="og:title" content="Rescue Resipiration">
+    <meta property="og:description" content="A open source, afforable ventilator to help countries everywhere beat the COVID19 Pandemic.">
+    <meta property="og:image" content="/images/og_preview.jpg">
+    <meta property="og:image:alt" content="Person working on Ventilator in Hospital.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="Person working on Ventilator in Hospital">
+    <meta property="og:url" content="https://www.rescue-respiration.org/">
+    <link rel="canonical" href="https://www.rescue-respiration.org/">
+    
+    <!--Additional Head-->
+    
+    
+</head>
+
+<body class="notch-safe is-flex is-flex-direction-column" style="min-height: 100vh;">
+    
+    <section>
+        <header>
+            
+
+<a href="https:&#x2F;&#x2F;rescue-respiration.org&#x2F;">
+    <div class="logo">
+        <img src="https:&#x2F;&#x2F;rescue-respiration.org&#x2F;lung-red.svg" alt="logo">
+        Rescue Respiration
+    </div>
+</a>
+
+<nav>
+    
+        
+            <a class="nav-item subtitle-text" href="https:&#x2F;&#x2F;rescue-respiration.org&#x2F;software&#x2F;">Software</a>
+        
+    
+        
+        
+    
+        
+        
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https:&#x2F;&#x2F;github.com&#x2F;rescue-respiration&#x2F;">Github</a>
+        
+    
+    <a href="mailto:info@rescue-respiration.org" class="nav-item subtitle-text">Contact</a>
+    <a href="/donate" class="button is-white is-small is-outlined donate">Donate</a>
+</nav>
+
+        </header>
+    </section>
+
+
+    <main class="is-flex-grow-1">
+        <section class="section container is-desktop" style="display: flex;">
+
+            
+            
+            
+            
+            
+            <div class="toc">
+                <div class="toc-sticky">
+                    
+                    <div class="toc-item">
+                        <a class="subtext" href="https://rescue-respiration.org/software/#rescue-respiration-gui">Rescue Respiration GUI</a>
+                    </div>
+                    
+                    
+                    <div class="toc-item">
+                        <a class="subtext" href="https://rescue-respiration.org/software/#installation-instructions">Installation Instructions</a>
+                    </div>
+                    
+                    
+                    <div class="toc-item-child">
+                        <a class="subtext" href="https://rescue-respiration.org/software/#using-raspian-lite"><small>- Using Raspian Lite</small></a>
+                    </div>
+                    
+                    <div class="toc-item-child">
+                        <a class="subtext" href="https://rescue-respiration.org/software/#set-up-raspbian-lite-with-network-and-ssh"><small>- Set Up Raspbian-Lite with Network and SSH</small></a>
+                    </div>
+                    
+                    <div class="toc-item-child">
+                        <a class="subtext" href="https://rescue-respiration.org/software/#copying-the-application-files"><small>- Copying the application files</small></a>
+                    </div>
+                    
+                    <div class="toc-item-child">
+                        <a class="subtext" href="https://rescue-respiration.org/software/#raspbian-first-boot-configuration"><small>- Raspbian first-boot configuration</small></a>
+                    </div>
+                    
+                    <div class="toc-item-child">
+                        <a class="subtext" href="https://rescue-respiration.org/software/#installing-the-application-specific-dependencies"><small>- Installing the application-specific dependencies:</small></a>
+                    </div>
+                    
+                    <div class="toc-item-child">
+                        <a class="subtext" href="https://rescue-respiration.org/software/#configuring-openbox"><small>- Configuring Openbox</small></a>
+                    </div>
+                    
+                    <div class="toc-item-child">
+                        <a class="subtext" href="https://rescue-respiration.org/software/#getting-rid-of-that-pesky-cursor-and-starting-at-boot"><small>- Getting rid of that pesky cursor and starting at boot:</small></a>
+                    </div>
+                    
+                    
+                    
+                    <div class="toc-item">
+                        <a class="subtext" href="https://rescue-respiration.org/software/#installing-the-proper-display-drivers">Installing the proper Display Drivers</a>
+                    </div>
+                    
+                    
+                    <div class="toc-item-child">
+                        <a class="subtext" href="https://rescue-respiration.org/software/#python-requirements"><small>- Python Requirements</small></a>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            
+            
+
+            <div class="content text">
+                
+    <div class="heading-text">Software</div>
+    <h1 id="rescue-respiration-gui">Rescue Respiration GUI</h1>
+<p>In order to control the ventilator we developed a intuitive GUI that displays the current ventilation parameters and plots the current pressure and volume delivered to the patient in each cycle.</p>
+<figure class="image">
+    <img src="&#x2F;images&#x2F;screenshot_monitor.png" alt="Monitor View of the ventilatior GUI"/>
+    <figcaption>Monitor View of the ventilatior GUI</figcaption>
+</figure>
+<p>In this view one can see a all ventilation parameters. Medical personel can adjust them by pressing the buttons on the touchscreen.</p>
+<figure class="image">
+    <img src="&#x2F;images&#x2F;screenshot_settings.png" alt="Settings View of the ventilatior GUI"/>
+    <figcaption>Settings View of the ventilatior GUI</figcaption>
+</figure>
+<p>In this view, the medical personel can adjust the threshold values at which they want to be alarmed.</p>
+<figure class="image">
+    <img src="&#x2F;images&#x2F;screenshot_warnings.png" alt="Warning View of the ventilatior GUI"/>
+    <figcaption>Warning View of the ventilatior GUI</figcaption>
+</figure>
+<p>Before the device is deployed a few things have to be set from the UI. The network connection is only used when remote maintenace is requested.</p>
+<figure class="image">
+    <img src="&#x2F;images&#x2F;screenshot_admin.png" alt="Admin View of the ventilatior GUI"/>
+    <figcaption>Admin View of the ventilatior GUI</figcaption>
+</figure>
+<h1 id="installation-instructions">Installation Instructions</h1>
+<p>We need to complete a few installation steps to configure the Raspberry to run our application in Kiosk-mode. This means setting up the system in such way that prevents user interaction and activities on the device outside the scope of execution of our application.</p>
+<p>Based heavily on this <a href="http://shallowsky.com/blog/tech/raspberry-pi-kiosk.html">blog</a>.</p>
+<h3 id="using-raspian-lite">Using Raspian Lite</h3>
+<p>Raspbian desktop is bloated. More important, the desktop is difficult to configure. We are therefore starting with a freshly burned <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian Lite</a> SD card.</p>
+<h3 id="set-up-raspbian-lite-with-network-and-ssh">Set Up Raspbian-Lite with Network and SSH</h3>
+<p>We may want to use ssh inside our home network while debugging, even though the final application won't need a network. The easiest way to enable SSH is to mount the first partition: <code>sudo mount /dev/sdX1 /mnt</code>.
+(sdX is wherever the card shows up on your machine, e.g. sdB) and create two files:</p>
+<ol>
+<li>An empty file named <em>ssh</em>, easily created using <code>touch /mnt/ssh</code>.</li>
+<li>A file named <em>wpa_supplicant.conf</em> with the settings for the local network:</li>
+</ol>
+<code class="box code-block language-config" data-lang="config" style="word-wrap: pre;">ctrl_interface=DIR=&#x2F;var&#x2F;run&#x2F;wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+    ssid=&quot;MY-WIFI-SSID&quot;
+    psk=&quot;MY-WIFI-PASSWORD&quot;
+    priority=10
+}</code>
+<p>Then unmount that partition using <code>sudo umount /mnt</code></p>
+<h3 id="copying-the-application-files">Copying the application files</h3>
+<p>The second partition on a Raspbian card is the root filesystem, including /home/pi, the pi user's home dictory. Mount <code>/dev/sdX2</code>, copy the application folder or clone this repository into <code>/home/pi</code>, and chown the code to the pi user. Don't forget to first create a ssh key and add it to your GitHub account so the Pi is allowed to pull from the private repository.</p>
+<p>Unmount the SD card and insert it to the Raspberry Pi.</p>
+<h3 id="raspbian-first-boot-configuration">Raspbian first-boot configuration</h3>
+<p>Boot the Pi with a monitor attached, log in as the pi user, run <code>sudo raspi-config</code>, and:</p>
+<ul>
+<li>set the locale and keyboard,</li>
+<li>change the password for user Pi,</li>
+<li>in <em>Boot Options</em>, choose “Desktop / CLI” and “Console Autologin” so the <em>pi</em> user will be logged in automatically.</li>
+</ul>
+<p>To make sure the installation won't become too bloated, create the file <em>/etc/apt/apt.conf</em> containing:</p>
+<code class="box code-block language-config" data-lang="config" style="word-wrap: pre;">APT::Install-Recommends &quot;false&quot;;
+APT::Install-Suggests &quot;false&quot;;</code>
+<p>Update the OS, and install the packages needed to run X, the Openbox window manager, a terminal (I used xterm in this example), and a text editor.</p>
+<p><code>sudo apt update</code></p>
+<p><code>sudo apt install xserver-xorg x11-xserver-utils xinit openbox xterm</code></p>
+<p>If you're in a hurry, you can skip the following dist-upgrade step.
+<code>sudo apt dist-upgrade</code></p>
+<h3 id="installing-the-application-specific-dependencies">Installing the application-specific dependencies:</h3>
+<p>We start by installing pip and the Tk bindings: <code>sudo apt install python3-pip python3-tk</code></p>
+<p>Then install the needed python modules <em>matplotlib</em> and <em>pandas</em> using pip: <code>python3 -m pip install matplotlib pandas</code></p>
+<h3 id="configuring-openbox">Configuring Openbox</h3>
+<p>Start by creating the Openbox configuration directory: <code>mkdir -p .config/openbox</code>
+Create a file <em>.config/openbox/autostart</em> containing:</p>
+<code class="box code-block language-sh" data-lang="sh" style="word-wrap: pre;"># Disable screen saver&#x2F;screen blanking&#x2F;power management
+xset s off
+xset s noblank
+xset -dpms
+
+# Start a terminal
+xterm &amp;</code>
+<p>Save the file, and test to make sure you can run X: <code>startx</code></p>
+<p>You should see a black screen, a mouse pointer, and after a few seconds, a small xterm window in the center of the screen. You can use the xterm to fiddle with things you want to change, or you can right-click anywhere outside the xterm window to get a menu that will let you exit X and go back to the bare console.</p>
+<h3 id="getting-rid-of-that-pesky-cursor-and-starting-at-boot">Getting rid of that pesky cursor and starting at boot:</h3>
+<p>As we are using a touchscreen, we want to remove that annoying mouse pointer arrow. Add this to your <em>.bash_profile</em>:</p>
+<code class="box code-block language-sh" data-lang="sh" style="word-wrap: pre;">[[ -z $DISPLAY &amp;&amp; $XDG_VTNR -eq 1 ]] &amp;&amp; startx -- -nocursor</code>
+<p>If you are stuck in the kiosk-view, you can still ssh-in from another machine and use <code>killall python3</code> to force quit the application.</p>
+<h1 id="installing-the-proper-display-drivers">Installing the proper Display Drivers</h1>
+<p>We are using the 7inch HDMI Display-C-1024X600(MPI7002) which needs special drivers in order to work properly.</p>
+<p><code>git clone https://github.com/goodtft/LCD-show.git</code></p>
+<p><code>chmod -R 755 LCD-show</code></p>
+<p><code>cd LCD-show/</code></p>
+<p>Here we find a bunch of different drivers, but because we are using the 7inch variant with a 1024X600 resolution we need to select the apropriate driver.
+<code>sudo ./LCD7C-show</code></p>
+<h2 id="python-requirements">Python Requirements</h2>
+<p><code>python3 -m pip install --upgrade pip</code></p>
+<p><code>python3 -m pip install -r requirements.txt</code></p>
+<h3 id="numpy-specific-requirements">Numpy specific Requirements</h3>
+<p><code>sudo apt-get install libatlas-base-dev</code></p>
+
+
+            </div>
+
+        </section>
+    </main>
+
+    
+    <footer>
+        <small class="text has-text-white has-text-centered" style="font-size: 0.9em;">
+    <p><a href="/imprint-and-data-protetion">Imprint and Data Protection</a>.</p>
+    <p>Contents under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>, source under the <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL</a>.</p>
+</small>
+
+    </footer>
+    
+</body>
+<!--Additional Javascript-->
+<script>
+    function highlightNav(heading) {
+        let pathname = location.pathname;
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+        document.querySelector(".toc a[href$='" + pathname + "#" + heading + "']").classList.add("active");
+    }
+
+    let currentHeading = "";
+    window.onscroll = function () {
+        let h = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+        let elementArr = [];
+
+        h.forEach(item => {
+            if (item.id !== "") {
+                elementArr[item.id] = item.getBoundingClientRect().top;
+            }
+        });
+        elementArr.sort();
+        for (let key in elementArr) {
+            if (!elementArr.hasOwnProperty(key)) {
+                continue;
+            }
+            if (elementArr[key] > 0 && elementArr[key] < 300) {
+                if (currentHeading !== key) {
+                    highlightNav(key);
+                    currentHeading = key;
+                }
+                break;
+            }
+        }
+    }
+</script>
+
+</html>
