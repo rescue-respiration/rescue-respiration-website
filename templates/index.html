@@ -28,8 +28,8 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="Person working on Ventilator in Hospital">
-    <meta property="og:url" content="https://www.rescue-respiration.org/">
-    <link rel="canonical" href="https://www.rescue-respiration.org/">
+    <meta property="og:url" content="https://rescue-respiration.github.io/">
+    <link rel="canonical" href="https://rescue-respiration.github.io/">
     
     <!--Additional Head-->
     {% block head %}
@@ -37,6 +37,9 @@
 </head>
 
 <body class="notch-safe is-flex is-flex-direction-column" style="min-height: 100vh;">
+    <div class="notification is-warning is-light mb-0">
+      <strong>Notice:</strong> This project is no longer maintained. The website remains online for archival purposes only.
+    </div>
     {% block header %}
     <section>
         <header>
@@ -75,38 +78,11 @@
 
     <main class="is-flex-grow-1">
         <section class="section container is-desktop" style="display: flex;">
+                            {% block content %}
 
-            {% block toc %}
-            {% if section.toc %}
-            {% set toc = section.toc %}
-            {% elif page.toc %}
-            {% set toc = page.toc %}
-            {% endif %}
-            {% if toc %}
-            <div class="toc">
-                <div class="toc-sticky">
-                    {% for h in toc %}
-                    <div class="toc-item">
-                        <a class="subtext" href="{{h.permalink | safe}}">{{ h.title }}</a>
-                    </div>
-                    {% if h.children %}
-                    {% for h2 in h.children %}
-                    <div class="toc-item-child">
-                        <a class="subtext" href="{{h2.permalink | safe}}"><small>- {{ h2.title }}</small></a>
-                    </div>
-                    {% endfor %}
-                    {% endif %}
-                    {% endfor %}
-                </div>
-            </div>
-            {% endif %}
-            {% endblock toc %}
 
-            <div class="content text">
-                {% block content %}
-                    
-                {% endblock content %}
-            </div>
+
+            {% endblock content %}
 
         </section>
     </main>
